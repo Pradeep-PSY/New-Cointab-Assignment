@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const { connection } = require('mongoose');
+const userController = require('./controller/usercontroller');
 
 const app = express();
 
@@ -10,6 +11,8 @@ app.use(cors());
 app.get('/', (req, res) => {
     res.send('new_cointab_Backend')
 })
+
+app.use('/user',userController)
 
 
 app.listen(8000,async ()=>{

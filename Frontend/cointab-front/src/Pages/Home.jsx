@@ -4,7 +4,6 @@ import axios from 'axios'
 
 const Home = () => {
     const handleClick = () =>{
-        axios.get('https://randomuser.me/api/?results=50').then((res)=>console.log(res.data.results))
     }
   return (
     <Box textAlign={'center'} m='3'>
