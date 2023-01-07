@@ -1,10 +1,9 @@
 const express = require('express');
 const cors = require('cors');
-const { connection } = require('mongoose');
+const  connection = require('./config/db');
 const userController = require('./controller/usercontroller');
 
 const app = express();
-
 app.use(express.json());
 app.use(cors());
 
@@ -15,7 +14,7 @@ app.get('/', (req, res) => {
 app.use('/user',userController)
 
 
-app.listen(8000,async ()=>{
+app.listen(7000,async ()=>{
     try{
         await connection;
         console.log('db is connected')
@@ -23,5 +22,5 @@ app.listen(8000,async ()=>{
     catch(err){
         console.log(err)
     }
-    console.log('listening on 8000')
+    console.log('listening on 7000')
 })

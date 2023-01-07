@@ -1,11 +1,11 @@
 const {Schema, model} = require("mongoose");
 
 const userSchema = new Schema({
-    gender:{ type:String },
-    name:{ type:String },
+    gender:{  },
+    name:{ },
     location:{ },
-    email: { type:String },
-    dob: { type:String }
+    email: {  },
+    dob: { }
 })
 
 const userModel = model('user', userSchema);
