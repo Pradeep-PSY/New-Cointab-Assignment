@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { DELETE_USER_ERROR, DELETE_USER_LOADING, DELETE_USER_SUCCESS, FETCH_USER_ERROR, FETCH_USER_LOADING, FETCH_USER_SUCCESS } from './action.type'
+import { DELETE_USER_ERROR, DELETE_USER_LOADING, DELETE_USER_SUCCESS, FETCH_USER_ERROR, FETCH_USER_LOADING, FETCH_USER_SUCCESS, GET_USER_DETAIL } from './action.type'
 
 
 export const FetchUser = () => dispatch =>{
@@ -17,3 +17,9 @@ export const DeleteUser = () => dispatch =>{
     .catch((err)=> dispatch({type:DELETE_USER_ERROR}))
 }
 
+
+export const GetUser = (page) => dispatch => {
+    axios.get(`http://localhost:7000/user/userdetail?page=${page}`)
+    .then((res) => dispatch({type:GET_USER_DETAIL, payload:res.data}))
+    .catch((err)=> console.log(err))
+}
