@@ -31,7 +31,7 @@ userController.get("/fetchuser", async (req, res) => {
     const users =  userModel;
     await users.insertMany(user_data)
 
-        res.send('wip')
+        res.send('Data Added Successfully')
     }
     catch(err){
         console.log(err)
