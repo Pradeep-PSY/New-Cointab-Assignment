@@ -1,13 +1,37 @@
 # New-Cointab-Assignment
 
 
+## Explain
+
+Page will have three buttons namely Fetch
+Users, Delete Users, User Details.
+
+1. On clicking the Fetch Users button
+the application should fetch data in
+bulk around 50 – 100 records from the
+(https://randomuser.me/) api and store
+it in a table of any name in the
+database
+
+2. The Delete Users button the
+application should remove all the
+entries in the database.
+
+3. On clicking on the User Details the
+application should open the Page 2
+where it will display the data in the
+database as a table view with
+pagination feature as well as some
+filter option to filter the data in the
+table.
+
 
 
 ## Tech Stack
 
 **Client:** React, Redux, Chakra UI, 
 
-**Server:** Node, Express, jwt, bycrpt.
+**Server:** Node, Express, mongoose, nodemon.
 
 
 ## Run Locally
