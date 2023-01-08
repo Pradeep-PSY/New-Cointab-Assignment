@@ -72,3 +72,10 @@ https://cointab-front.vercel.app/
 
 
 ## Screenshots
+
+
+![Screenshot (154)](https://user-images.githubusercontent.com/101596416/211196440-92215fac-5932-4806-b9ba-a75f2706b3fc.png)
+
+-------
+
+![Screenshot (153)](https://user-images.githubusercontent.com/101596416/211196447-ad8428da-b477-48fc-894e-066749faa6a7.png)
