@@ -56,7 +56,7 @@ export const appReducer = (state=initialState,{type,payload})=>{
         }
 
         case GET_USER_DETAIL: {
-            console.log(payload)
+            
             return {
                 ...state,
                 data: payload

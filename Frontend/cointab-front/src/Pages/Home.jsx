@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
 
-  const { msg, Loading, delete_Loader } = useSelector((state) => state.app)
+  const {  Loading, delete_Loader } = useSelector((state) => state.app)
   const dispatch = useDispatch();
 
   const handleClick = () => {
@@ -15,6 +15,7 @@ const Home = () => {
   }
 
   const handleDelete = () => {
+    alert('All Data will be Deleted.')
     dispatch(DeleteUser());
   }
 
@@ -24,13 +25,13 @@ const Home = () => {
       <Box m='3'>
         <Text>Fetched the Data</Text>
         <Button colorScheme={'blue'} disabled={Loading} onClick={handleClick}>Fetch users</Button>
-
       </Box>
-      <Text>Delete the data</Text>
+
       <Box m='3'>
+        <Text>Delete the data</Text>
         <Button disabled={delete_Loader} colorScheme={'red'} onClick={handleDelete}>Delete users</Button>
-
       </Box>
+
       <Box m='3'>
         <Text>Take to Details Page</Text>
         <Link to='/userdetail' >
@@ -39,6 +40,7 @@ const Home = () => {
           </Button>
         </Link>
       </Box>
+
     </Box>
   )
 }

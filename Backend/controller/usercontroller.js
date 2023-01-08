@@ -44,7 +44,7 @@ userController.get("/fetchuser", async (req, res) => {
 userController.get('/delete', async(req,res)=>{
     try{
        let prd = await  userModel.deleteMany({})
-       console.log(prd)
+       
        res.send(prd)
 
     }
