@@ -15,13 +15,14 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/Pradeep-PSY/Company-Assignment/quiz-system/Frontend.git
+  https://github.com/Pradeep-PSY/New-Cointab-Assignment.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd quiz-app
+  cd Frontend
+  cd cointab-front
 ```
 
 Install dependencies
@@ -42,7 +43,7 @@ Start the server
 deployed link of project
 
 ```bash
- https://quiz-app-one-self.vercel.app/login
+https://cointab-front.vercel.app/
 ```
 
 
