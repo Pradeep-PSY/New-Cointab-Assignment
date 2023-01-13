@@ -70,4 +70,12 @@ userController.get('/userdetail', async (req,res)=>{
 
 })
 
+userController.get('/agn', async(req,res)=>{
+    let grt = await userModel.find({gender:"male","dob.age":{$gt:30}})
+
+    // console.log(grt)
+    res.send({"total_data":grt.length})
+
+})
+
 module.exports = userController;
